@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <image-cloudinary
+      src="https://res.cloudinary.com/komercia/image/upload/v1551112577/ojfhmzqu8nlbrzkzdocp.png"
+    />
+    <img
+      src="https://res.cloudinary.com/komercia/image/upload/v1551112577/ojfhmzqu8nlbrzkzdocp.png"
+    >
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import imageCloudinary from "./index.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    imageCloudinary
   }
 };
 </script>
@@ -24,5 +28,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+img {
+  width: 50%;
 }
 </style>
